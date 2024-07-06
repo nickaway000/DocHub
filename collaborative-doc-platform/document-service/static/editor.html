@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Editor</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="document-title" placeholder="Document Title">
+        <textarea id="document-content" rows="20" cols="80"></textarea>
+        <button id="save-button">Save</button>
+        <div id="collaborators">
+            <h3>Collaborators</h3>
+            <ul id="collaborator-list"></ul>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/static/js/editor.js"></script>
+</body>
+</html>
